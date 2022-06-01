@@ -14,6 +14,7 @@
     --red-color: red;
     --green-color: green;
     --blue-color: blue;
+    --background-color: rgb(230, 228, 228);
     --banner-height: max(125px, 17vh);
     --default-border: 2px solid var(--red-color);
 }
@@ -66,12 +67,19 @@ main {
     justify-content: center;
     width: inherit;
     color: var(--white-color);
+    opacity: .75;
+}
+
+.span-underline {
+    text-decoration: underline;
 }
 
 
 
 #sub-main-container-right {
     display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
     width: 65vw;
     height: inherit;
     border: var(--default-border);
