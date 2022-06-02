@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Sign-up</title>
 </head>
@@ -18,12 +19,50 @@
             </div>
         </div>
         <div class="sub-main-container" id="sub-main-container-right">
-            <div class="right-header-container">
-                <p>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-                <p class="bottom-p">You know you want to!</p>
+            <form action="http://httpbin.org/post" method="post" id="my-form">
+                <div class="right-header-container">
+                    <p class="header-p">This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started.</p>
+                    <p class="header-p bottom-p">You know you want to!</p>
+                </div>
+                <div class="right-form-container">
+                    <legend>Let's do this!</legend>
+                    <div class="input-main-container">
+                      <ul>
+                        <li>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" minlength="1" placeholder="John" required>
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" minlength="5" required>
+                        </li>
+                        <li>
+                            <label for="password">PASWORD</label>
+                            <input type="password" id="password" name="password" minlength="6" maxlength="16" placeholder="length 6-16" required>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" minlength="1" placeholder="Smith" required>
+                        </li>
+                        <li>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" id="phone_number" name="phone_number">
+                        </li>
+                        <li><label for="conf_pass">CONFIRM PASSWORD</label>
+                            <input type="password" id="conf_pass" name="conf_pass" minlength="6" maxlength="16" placeholder="length 6-16" required>
+                        </li>
+                    </ul>    
+                    </div> 
+                </div>
+                <div class="right-button-container">
+                    <button type="submit"> Create Account</button>
+                    <p>Already have an account? <a href="#">Log In</a></p>
+                </div>
+            </form>
+            
             </div>
-            <div class="right-form-container"></div>
-            <div class="right-button-container"></div>
         </div>
     </main>
 </body>
